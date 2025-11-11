@@ -27,7 +27,7 @@
 ---
 
 ## Parte 1 – Preparación del entorno
-> **Nota (gris claro):** Esta sección sirve para preparar el entorno de trabajo.
+> **Nota:** Esta sección sirve para preparar el entorno de trabajo.
 
 1. Abre **PSeInt** y asegúrate de que la vista *Panel de variables* está visible.  
    - Si no la ves, actívala en el menú: `Ver → Panel de seguimiento`.  
