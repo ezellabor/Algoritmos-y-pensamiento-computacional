@@ -1,4 +1,4 @@
-# Práctica 2 – Siguiendo el rastro de las variables (Modo paso a paso o Debugger)
+# Práctica 2 – Siguiendo el rastro de las variables (Modo "paso a paso" o Debugger)
 **Unidad:** UT1 – Identificadores, Variables y Constantes  
 **Módulo:** Fundamentos de Programación | ASIR1  
 **Profesor:** Ezequiel Llarena Borges  
@@ -19,19 +19,19 @@
 ---
 
 ## Objetivos de la unidad
-- Aprender a ejecutar un programa paso a paso (depurador o debugger).  
-- Observar cómo cambian las variables en cada instrucción.  
+- Aprender a ejecutar un programa en modo "paso a paso" o **Depuración**  
+- Observar cómo cambian las variables en cada instrucción para ayudar a localizar errores.  
 - Entender la diferencia entre **valor inicial, intermedio y final** de una variable.  
-- Usar el depurador como herramienta para detectar errores lógicos.
+- Usar el depurador como herramienta para **detectar errores lógicos.**
 
 ---
 
 ## Parte 1 – Preparación del entorno
 > **Nota:** Esta sección sirve para preparar el entorno de trabajo.
 
-1. Abre **PSeInt** y asegúrate de que la vista *Panel de variables* está visible.  
+1. Abre el **entorno de desarrollo** PSeInt y asegúrate de que la vista *Panel de variables* está activada.  
    - Si no la ves, actívala en el menú: `Ver → Panel de seguimiento`.  
-2. Crea un nuevo algoritmo llamado `Depuracion_Variables`.  
+2. Crea un nuevo pseudocódigo llamado `Depuracion_Variables`.  
 3. Copia este código inicial:
 
 ```pseudocode
