@@ -8,7 +8,9 @@ tags: ["PSeInt", "Depuración", "Variables", "Constantes", "ASIR1", "Fundamentos
 date: 2025-11-09
 layout: "default"
 -->
-# Práctica 2 – Siguiendo el rastro de las variables (Modo "paso a paso" o Debugger)
+# P2 – Depuración y exploración de código 
+>Modo "paso a paso" o Debugger
+---
 **Unidad:** UT1 – Identificadores, Variables y Constantes  
 **Módulo:** Fundamentos de Programación | ASIR1  
 **Profesor:** Ezequiel Llarena Borges  
@@ -79,9 +81,8 @@ FinAlgoritmo
 **Anota tus observaciones:**
 
 ```
-_____________________________________________________________
-_____________________________________________________________
-_____________________________________________________________
+
+___________________
 ```
 
 4. Cambia el valor de `aumento` por `50` y repite la depuración.  
