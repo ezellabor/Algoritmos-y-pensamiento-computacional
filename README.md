@@ -1,3 +1,13 @@
+<!--
+title: "Práctica 2 – Siguiendo el rastro de las variables"
+module: "Fundamentos de Programación | ASIR1"
+unit: "UT1 – Identificadores, Variables y Constantes"
+author: "Ezequiel Llarena Borges"
+description: "Uso del depurador (modo paso a paso) en PSeInt para observar la evolución de variables y constantes."
+tags: ["PSeInt", "Depuración", "Variables", "Constantes", "ASIR1", "Fundamentos de Programación"]
+date: 2025-11-09
+layout: "default"
+-->
 # Práctica 2 – Siguiendo el rastro de las variables (Modo "paso a paso" o Debugger)
 **Unidad:** UT1 – Identificadores, Variables y Constantes  
 **Módulo:** Fundamentos de Programación | ASIR1  
@@ -19,19 +29,20 @@
 ---
 
 ## Objetivos de la unidad
-- Aprender a ejecutar un programa en modo "paso a paso" o **Depuración**  
-- Observar cómo cambian las variables en cada instrucción para ayudar a localizar errores.  
+- Aprender a ejecutar un programa en modo "paso a paso" o **Depuración.**
+- Observar cómo cambian las variables en cada paso para ayudar a localizar errores.
 - Entender la diferencia entre **valor inicial, intermedio y final** de una variable.  
-- Usar el depurador como herramienta para **detectar errores lógicos.**
+- Usar el depurador como herramienta para detectar errores lógicos.
 
 ---
 
 ## Parte 1 – Preparación del entorno
+
 > **Nota:** Esta sección sirve para preparar el entorno de trabajo.
 
-1. Abre el **entorno de desarrollo** PSeInt y asegúrate de que la vista *Panel de variables* está activada.  
+1. Abre **PSeInt** y asegúrate de que la vista *Panel de variables* está visible.  
    - Si no la ves, actívala en el menú: `Ver → Panel de seguimiento`.  
-2. Crea un nuevo pseudocódigo llamado `Depuracion_Variables`.  
+2. Crea un nuevo algoritmo llamado `Depuracion_Variables`.  
 3. Copia este código inicial:
 
 ```pseudocode
@@ -53,3 +64,124 @@ Algoritmo Depuracion_Variables
 
    Escribir "Sueldo con IVA: ", nuevoSueldo * (1 + IVA)
 FinAlgoritmo
+```
+
+## Parte 2 – Explorando el modo “Paso a paso”
+
+> **Consejo:** Observa la ejecución de cada instrucción y el cambio de valores.
+
+1. Pulsa **Depurar / Paso a paso (F8)**.  
+2. Observa en el panel de variables cómo aparecen las variables una a una.  
+3. Cada vez que presiones F8, avanza una línea.  
+   - ¿Qué ocurre cuando ejecuta `edad <- 20`?  
+   - ¿Qué valor tiene `nuevoSueldo` antes y después de `nuevoSueldo <- sueldo + aumento`?
+
+**Anota tus observaciones:**
+
+```
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+```
+
+4. Cambia el valor de `aumento` por `50` y repite la depuración.  
+   - ¿Qué cambió en los resultados?
+
+---
+
+## Parte 3 – Detectando errores con el depurador
+
+> **Observación:** Analiza el comportamiento del programa cuando contiene un error lógico.
+
+1. Sustituye la línea:  
+
+```pseudocode
+nuevoSueldo <- sueldo + aumento
+```  
+
+por  
+
+```pseudocode
+nuevoSueldo <- sueldo - aumento
+```
+
+2. Ejecuta paso a paso.  
+   - Observa el valor de `nuevoSueldo`.  
+   - ¿Por qué el resultado no es correcto?
+
+**Reflexión:**
+
+```
+_____________________________________________________________
+_____________________________________________________________
+```
+
+3. Corrige la instrucción y vuelve a ejecutar paso a paso.
+
+---
+
+## Parte 4 – Seguimiento de una constante
+
+> **Recordatorio:** Las constantes no cambian su valor durante la ejecución.
+
+- Observa en el panel que `IVA` siempre mantiene el mismo valor.  
+- Prueba a escribir una instrucción que intente cambiarlo:
+
+```pseudocode
+IVA <- 0.18
+```
+
+y ejecútala paso a paso.
+
+Verás que PSeInt muestra un error: **“No se puede modificar una constante”**.  
+Esto demuestra que las **constantes no varían durante la ejecución**.
+
+---
+
+## Parte 5 – Reto final: “Detective de variables”
+
+> **Reto:** Amplía el programa y analiza nuevas variables.
+
+Añade una nueva variable llamada `ahorro`, cuyo valor sea el 10 % del nuevo sueldo.  
+
+```pseudocode
+ahorro <- nuevoSueldo * 0.10
+Escribir "Ahorro mensual: ", ahorro
+```
+
+**Preguntas:**
+- ¿En qué momento se crea la variable `ahorro`?  
+- ¿Cuál es su valor antes de ejecutar la línea anterior?  
+- ¿Qué ocurre si cambias el orden de las instrucciones?
+
+```
+_____________________________________________________________
+_____________________________________________________________
+_____________________________________________________________
+```
+
+---
+
+## Síntesis
+
+| Concepto | Observación |
+|-----------|-------------|
+| Variable | Cambia de valor a lo largo del programa |
+| Constante | Mantiene su valor durante toda la ejecución |
+| Depurador | Permite seguir el flujo del programa paso a paso |
+| Error lógico | No interrumpe la ejecución, pero produce un resultado incorrecto |
+
+---
+
+## Buenas prácticas
+- Usa **F8** para avanzar y **Ctrl + F8** para saltar una función completa.  
+- Observa siempre el **panel de variables** mientras depuras.  
+- Usa el **modo lento** para seguir el flujo completo.  
+- Introduce pequeños errores a propósito para practicar la detección.
+
+---
+
+## Extensión (opcional)
+Guarda una captura del **panel de variables** mostrando el momento en que cambian los valores y añádela a tu portfolio de aprendizaje.
+
+
