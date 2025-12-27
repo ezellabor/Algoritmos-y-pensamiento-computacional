@@ -4,7 +4,7 @@ import java.util.Scanner;
  * Aplicación de Gestión de Agenda de Contactos
  * Práctica 5: Arrays y Estructuras de Datos
  *
- * @author Tu Nombre
+ * @author Ezequiel Llarena Borges
  * @version 5.0
  */
 public class AgendaContactosApp {
@@ -288,4 +288,5 @@ public class AgendaContactosApp {
         return posArroba > 0 && posPunto > posArroba;
     }
 }
+
 
